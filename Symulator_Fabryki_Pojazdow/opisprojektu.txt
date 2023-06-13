@@ -1,0 +1,59 @@
+Dawid Makowski 407894 - temat 2
+
+Folder zawiera pliki .cpp oraz .h niezbędne do działania programu, dodatkowo znajduje się też
+folder cmake-build-debug, w którym znajdują się przykładowe pliki fabryka.txt, komis.txt,
+sklep.txt, stdinprzyklad.txt, pomockomendy.txt oraz plik.exe
+
+Program Fabryka & Pojazdy pozwala na symulację produkcji i korzystania z 
+pojazdów w zakładach o określonej pojemności i marży.
+Użytkownik może swobodnie korzystać z programu dopóki nie wyczerpią mu się środki
+zapisane w zmiennej saldo.
+
+Program można uruchomić w dwóch trybach:
+I. Jeśli program uruchomimy ze środowiska lub z wiersza poleceń bez dodatkowego argumentu, to
+    program będzie wykonywał się normalnie, będziemy pracować na wyświetlanym menu, program będzie
+    czytał z klawiatury
+II.Jeśli program uruchomimy z wiersza poleceń z dodatkowym argumentem (tym argumentem musi być
+    nazwa pliku), to program będzie wykonywał polecenia zawarte w podanym pliku.txt z minimalną
+    ingerencją użytkownika
+
+Program składa się z plików:
+1. klasy_zaklady.h - zawiera defincje klasy podstawowej Zaklad, oraz Fabryka, Komis i SklepRowerowy
+    Klasa Fabryka służy do produkcji każdego rodzaju pojazdu, można go potem przekazać do
+	innego zakładu.
+    Klasa Komis operuje na pojazdach silnikowych, może sprzedawać, kupować a także nieco
+	modyfikować te pojazdy
+    Klasa SklepRowerowy może sprzedawać i modyfikować rowery
+2. klasy_pojazdy.h - zawiera definicje wszystkich typów pojazdów
+    Klasa Samochod - zawiera w sobie główne statystyki opisowe typowego samochodu, można go
+	tankować, jeździć nim, operować na bagażniku, itp.
+    Klasa Motocykl - można robić to samo co w klasie Samochod, oczywiście ma inne wartości
+	atrybutów
+    Klasa Rower - można jeździć, smarować rower i operować na bagażniku
+3. funkcje_inne.h - zawiera deklaracje funkcji, a także definicje funkcji inline
+    które nie są metodami klas, są tam funkcje do wyświetlania ekranu, generowania losowych
+    liczb, funkcje sprawdzające wartości, itp. wykorzystano tutaj szablony
+4. metody_'klasa'.cpp - każda klasa zawiera swój plik z metodami, są tam funkcje które służą
+    przede wszystkim zarządzaniu danym typem, a także definicje operatorów przypisania i
+    wypisywania oraz konstruktory
+5. generator_liczb_losowych.cpp - zawiera dwie funkcje oraz tablicę globalną zawierająca 100
+    liczb losowych
+6. komendy.cpp - plik, który zawiera funkcje działające tylko w trybie czytania z pliku,
+    znajduje się tam cały mechanizm czytania poleceń z pliku, który po wpisaniu odpowiednich
+    komend przekierowuje nas do odpowiedniej funkcji, jeśli komenda w pliku jest napisana w
+    sposób wyczerpujący nie będzie praktycznie wymagana interwencja użytkownika
+7. konstrukcja.cpp - zawiera trzy funkcje konstruujące dany typ pojazdu w fabryce
+8. wyswietlacz.cpp - zawiera definicje funkcji wypisujące alfanumerczne okienka
+9. funkcje_main.cpp - zawiera funkcje praca_start() tworzącą podaną liczbę pojazdów oraz
+    oraz funkcje tworzące zakłady
+10. operacje_na_plikach.cpp - zawiera funkcje importu i eksportu, wykorzystany został
+    mechanizm rzucania wyjątków, jeśli podany plik nie spełnia oczekiwań
+11. zarzadzanie.cpp - zawiera definicje funkcji zarzadzanie dla każdej klasy zakładu oraz
+    funkcje zarządzaj_pojazdem działającą na każdym typie pojazdu
+12. main.cpp - plik zawierający funkcję main()
+    Po uruchomieniu programu pojawi się alfanumeryczny ekran wyboru, gdzie będziemy
+    mogli zrobić co chcemy. Są opcje takie jak import, tworzenie zakładu, zarządzanie zakładem,
+    zarządzanie pojazdami, itp. Menu jest wielopoziomowe, a po skończeniu
+    tworzenia zakładu można go zapisać opcją eksportuj
+
+Więcej informacji znajduje się w komentarzach w programie

@@ -1,0 +1,28 @@
+Lista komend:
+
+1./tworz zaklad_rodzaj "zaklad_nazwa" "pojemność" (marża)
+2./tworz pojazd_rodzaj fabryka_nazwa "marka" (silnik) "typ" "kolor" (moc)
+3./import zaklad_rodzaj plik.txt
+4./eksport zaklad_rodzaj zaklad_nazwa
+5/eksport wszystko
+6./przekaz pojazd_rodzaj fabryka_nazwa "zaklad_nazwa"
+7./kup pojazd_rodzaj komis_nazwa
+8./sprzedaj pojazd_rodzaj zaklad_nazwa
+9./lakieruj pojazd_rodzaj nr_seryjny "zaklad_nazwa"
+10./tankuj pojazd_rodzaj nr_seryjny "zaklad nazwa"
+11./nasmaruj rower nr_seryjny "sklep_nazwa"
+12./jazda pojazd_rodzaj nr_seryjny "zaklad_nazwa"
+13./zaladuj pojazd_rodzaj nr_seryjny "zaklad_nazwa"
+14./rozladuj pojazd_rodzaj nr_seryjny "zaklad_nazwa"
+15./wyswietl zaklad_rodzaj "zaklad_nazwa"
+16./wyswietl bagaznik pojazd_rodzaj nr_seryjny "zaklad_nazwa"
+17./zakoncz program
+18./pomoc
+
+Legenda:
+
+1. / - znak rozpoczynający komendę
+2. "" - opcjonalna część komendy
+3. () - część komendy obowiązująca w określonych przypadkach
+
+Jeśli nazwa własna zawiera spację, należy ją zastąpić znakiem '-' (minus)

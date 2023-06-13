@@ -1,0 +1,29 @@
+/import fabryka fabryka.txt
+/import komis komis.txt
+/import sklep sklep.txt
+
+/tworz rower Pulawy Unibike miejski Zielony
+/tworz rower Pulawy Kellys górski Czerwony
+/przekaz rower Pulawy
+/przekaz rower Pulawy Rolex
+
+/lakieruj rower PL_RowerPulawy000_Unibike_miejski_Zielony
+
+/sprzedaj rower Rolex
+
+/kup motocykl Lublin
+/kup samochod Lublin
+
+/jazda rower PL_RowerPulawy000_Unibike_miejski_Zielony
+/nasmaruj rower PL_RowerPulawy000_Unibike_miejski_Zielony
+
+/zaladuj bagaznik rower PL_RowerPulawy000_Unibike_miejski_Zielony
+/wyswietl bagaznik rower PL_RowerPulawy000_Unibike_miejski_Zielony
+/rozladuj bagaznik rower PL_RowerPulawy000_Unibike_miejski_Zielony
+
+/tankuj samochod PL_AutoPulawy003_Opel_Pickup_Zi_LPG140 Lublin
+/jazda samochod PL_AutoPulawy003_Opel_Pickup_Zi_LPG140 Lublin
+/zaladuj bagaznik samochod PL_AutoPulawy003_Opel_Pickup_Zi_LPG140
+/rozladuj bagaznik samochod PL_AutoPulawy003_Opel_Pickup_Zi_LPG140
+
+/zakoncz program

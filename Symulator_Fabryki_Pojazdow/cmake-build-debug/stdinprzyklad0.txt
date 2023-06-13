@@ -1,0 +1,46 @@
+/pomoc
+
+/tworz fabryka AutoMak 20
+/tworz komis Autex 20 1.2
+/tworz sklep Rolex 20 1.1
+
+/tworz samochod AutoMak Citroen LPG Hatchback Zielony 125
+/tworz samochod AutoMak Polonez Diesel Sedan Czarny 90
+/tworz samochod AutoMak
+/tworz motocykl AutoMak Yamaha Benzyna SUV Czarny 110
+/tworz motocykl AutoMak
+/tworz rower AutoMak Unibike górski Czerwony
+/tworz rower AutoMak
+
+/wyswietl fabryka AutoMak
+
+/przekaz rower AutoMak Rolex
+/przekaz rower AutoMak Rolex
+/przekaz samochod AutoMak Autex
+/przekaz samochod AutoMak Autex
+/przekaz samochod AutoMak Autex
+/przekaz motocykl AutoMak Autex
+/przekaz motocykl AutoMak Autex
+
+/wyswietl komis Autex
+/wyswietl sklep Rolex
+
+/kup samochod Autex
+/kup motocykl Autex
+
+/sprzedaj samochod Autex
+/sprzedaj rower Rolex
+
+/tankuj samochod PL_AutoAutoMak000_Citroen_Hatchback_Zi_LPG125
+/jazda samochod PL_AutoAutoMak000_Citroen_Hatchback_Zi_LPG125
+/wyswietl bagaznik samochod PL_AutoAutoMak000_Citroen_Hatchback_Zi_LPG125
+/zaladuj bagaznik samochod PL_AutoAutoMak000_Citroen_Hatchback_Zi_LPG125
+/rozladuj bagaznik samochod PL_AutoAutoMak000_Citroen_Hatchback_Zi_LPG125
+
+/jazda rower PL_RowerAutoMak005_Unibike_górski_Czerwony
+/nasmaruj rower PL_RowerAutoMak005_Unibike_górski_Czerwony
+/zaladuj bagaznik rower PL_RowerAutoMak005_Unibike_górski_Czerwony
+/wyswietl bagaznik rower PL_RowerAutoMak005_Unibike_górski_Czerwony
+/rozladuj bagaznik rower PL_RowerAutoMak005_Unibike_górski_Czerwony
+
+/zakoncz program
